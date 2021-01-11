@@ -1,0 +1,3 @@
+/home/xinqichen/projects/ncnn_demo/CMakeFiles/rebuild_cache.dir
+/home/xinqichen/projects/ncnn_demo/CMakeFiles/demo.dir
+/home/xinqichen/projects/ncnn_demo/CMakeFiles/edit_cache.dir
