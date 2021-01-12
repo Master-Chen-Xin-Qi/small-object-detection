@@ -29,8 +29,9 @@ pip3 install -r requirements.txt
 ### Self-made dataset
 - Simply, create a directory named datasets in the main project directory and a dirctory named out in the sub project directory, and in out directory create 6 directories named rgb, depth, label, test_rgb, test_depth, test_label.And then put your images and labels into the correspoding directory. 
 - Rgb image values have been normalized so that they fall into 0-255 range. 
-- If you want to label your predicted pictures, run `label_solver.py` to re-label your results.
+- If you want to label your predicted pictures, go to `lable_solver` folder and  run `label_solver.py` to re-label your results.
 - If you want to change the resolution of your images(from 480*640 to 240*320), create labels_resize directory.
+- If you are willing to change the resolution of your pictures, go to `label_solver` folder and run `label_resize` to obtain the resized label(.npy type).
 
 ## Training
 - To train FuseNet, run `fusenet_train.py` by providing the path of the dataset. 
