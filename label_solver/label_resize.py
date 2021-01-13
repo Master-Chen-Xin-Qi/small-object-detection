@@ -62,11 +62,12 @@ best_iou = [0.56,0.24,0.56,0.456,0.89]
 
 
 
-path_save = "/home/xinqichen/Desktop/label_png"
-path = '/home/xinqichen/Desktop/label_solver/afterlabel'
-label_save_dir = "/home/xinqichen/Desktop/labels_resize"
-pic_save_dir = "/home/xinqichen/Desktop/pic_resize"
-filelist = os.listdir(path_save)
+path_save = "/home/xinqichen/Desktop/240*320/label_png" #resized pictures are saved here
+path = '/home/xinqichen/Desktop/label_solver/afterlabel'#put your pictures here, which you want to resize
+label_save_dir = "/home/xinqichen/Desktop/240*320/labels_resize"
+pic_save_dir = "/home/xinqichen/Desktop/240*320/pic_resize"
+filelist = os.listdir(path)
+resize_filelist = os.listdir(path_save)
 # for file in filelist:
 #     save_name = os.path.join(path_save, file)
 #     name = os.path.join(path, file)
@@ -77,7 +78,7 @@ filelist = os.listdir(path_save)
 #     out.save(save_name,'png')
 
 
-for file in filelist:
+for file in resize_filelist:
     name = os.path.join(path_save, file)
     cur_img = cv2.imread(name)
     #picture size
